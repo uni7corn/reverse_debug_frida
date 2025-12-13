@@ -40,7 +40,6 @@
 * 【已解决】Frida中如何通过frida启动被测app程序iOS版抖音
 * 【已解决】frida调试进程直接运行不要每次都输入%resume才运行
 * 【未解决】iOS逆向Apple账号：用frida去hook打印所有iOS的ObjC函数调用
-* 【已解决】Frida中js代码中两个地址指针数值相加
 * 【已解决】frida中ptr的含义
 * 【已解决】js中把ObjC函数调用写法转换成Frida中ObjC函数调用写法
 * 【已解决】frida打印iOS的ObjC函数的参数的值
@@ -77,7 +76,6 @@
 * 【未解决】iPhone中用launchctl去启动和停止frida-server服务进程
 * 【未解决】frida导致iPhone重启：分析panic-full的ips是否和frida-server崩溃有关系
 * 【基本解决】iOS 15.1的iPhone11中frida-server所用架构是arm64e还是arm64
-* 【整理】Frida中对于js代码的支持不够完美
 * 【无法解决】iOS逆向Apple账号：用frida的ssl bypyass脚本尝试解决Charles抓包代理报错
 * 【未解决】iOS逆向Apple账号：用Frida去监控NSURL去调试Apple账号登录过程
 * 【未解决】iOS逆向Apple账号：用Frida去调试NSURL核心网络请求函数调用
