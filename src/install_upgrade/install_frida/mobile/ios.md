@@ -55,3 +55,33 @@ iPhone8-150:~ root# ls /usr/sbin/frida-server
         * ![frida_installed_files](../../../assets/img/frida_installed_files.png)
       * Cydia
         * ![cydia_frida_files](../../../assets/img/cydia_frida_files.jpg)
+
+## 常见问题
+
+### Frida的源暂时不可用
+
+之前，20241212前后，遇到过一个特殊情况：
+
+Frida的源`https://build.frida.re`暂时不可用
+
+* 现象：Cydia中添加源，刷新源时报错：Cached Failure
+  * `Failed to fetch https://build.frida.re/./Packages Cached Failure`
+    * ![cydia_src_cachec_failure](../../../assets/img/cydia_src_cachec_failure.png)
+  * 此时：Frida源中，看不到Frida的包
+    * ![frida_src_no_pkg](../../../assets/img/frida_src_no_pkg.png)
+* 解决办法
+  * 换装deb：可以考虑去官网的Release（[Releases · frida/frida](https://github.com/frida/frida/releases)）下载对应的：
+    * deb
+      * https://github.com/frida/frida/releases/download/16.5.9/frida_16.5.9_iphoneos-arm.deb
+      * https://github.com/frida/frida/releases/download/16.5.9/frida_16.5.9_iphoneos-arm64.deb
+    * 再去手动安装
+      * Filza中安装deb
+      * 或命令行安装：`dpkg -i xxx.deb`
+        * 记得最后再`重启桌面`=`注销`=`Respring`
+  * 多等一会，等Firda源正常识别：
+    * 如何多等待一会
+      * 期间可能需要，多试几次：重启桌面=注销=Respring
+    * 然后Firda源中就能看到Frida的包了
+      * ![frida_src_see_pkg](../../../assets/img/frida_src_see_pkg.png)
+      * ![frida_see_pkg_multi](../../../assets/img/frida_see_pkg_multi.png)
+    * 就可以继续安装了
