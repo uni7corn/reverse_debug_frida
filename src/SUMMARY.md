@@ -2,8 +2,11 @@
 
 * [前言](README.md)
 * [Frida概览](frida_overview/README.md)
-  * [代码和架构](frida_overview/code_arch.md)
   * [文档和资料](frida_overview/doc_refer/README.md)
+  * [代码](frida_overview/code.md)
+* [Frida架构原理](frida_logic/README.md)
+  * [架构](frida_logic/arch.md)
+  * [Hook函数原理](frida_logic/hook/README.md)
 * [安装和升级](install_upgrade/README.md)
   * [安装Frida](install_upgrade/install_frida/README.md)
     * [电脑端](install_upgrade/install_frida/pc/README.md)
